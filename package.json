@@ -1,0 +1,25 @@
+{
+  "name": "typescript-jest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {},
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^19.2.2",
+    "jest": "^19.0.2",
+    "typescript": "^2.2.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/preprocessor.js"
+    },
+    "testMatch": [
+      "**/__tests__/*.(ts|tsx)"
+    ]
+  }
+}
